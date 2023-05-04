@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025786422850",
+    "project_id": "cureiq",
+    "storage_bucket": "cureiq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025786422850:android:fbd1488498052f3777efdb",
+        "android_client_info": {
+          "package_name": "com.flutter_fire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025786422850-gkpmpirri68v0k03cplfmfjvq8cg4s3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBGJTDOXGJI3FaUpXd5TBpycTX7dV2Zt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025786422850-gkpmpirri68v0k03cplfmfjvq8cg4s3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

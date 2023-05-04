@@ -16,10 +16,10 @@ class bottompage extends StatefulWidget {
 class _bottompageState extends State<bottompage> {
   int _selectedPage = 0;
   final screens = [
+    homepage(),
+    doctortalk(),
     mixturepage(),
-    // homepage(),
-    // doctortalk(),
-    // profile_Page(),
+    profile_Page(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -35,9 +35,10 @@ class _bottompageState extends State<bottompage> {
             backgroundColor: Colors.blueGrey,
             items: [
               BottomNavigationBarItem(
-                  icon: Icon(Icons.local_hospital_rounded), label: 'Hospital'),
+                  icon: Icon(Icons.home_filled), label: 'Home'),
               BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chats'),
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.local_hospital_rounded), label: 'Hospital'),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person),
                 label: 'Profile',

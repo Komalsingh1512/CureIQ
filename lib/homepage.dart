@@ -5,6 +5,7 @@ import 'package:app_3/homepage.dart';
 import 'package:app_3/doctortalk.dart';
 import 'mixturepage.dart';
 import 'profile_page.dart';
+import 'package:app_3/Scanscreen.dart';
 
 class homepage extends StatelessWidget {
   const homepage({super.key});
@@ -118,7 +119,7 @@ class homepage extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Container(
-                                      margin: EdgeInsets.fromLTRB(3, 0, 0, 16),
+                                      margin: EdgeInsets.fromLTRB(3, 0, 0, 1),
                                       width: double.infinity,
                                       child: Row(
                                         crossAxisAlignment:
@@ -149,42 +150,63 @@ class homepage extends StatelessWidget {
                                           ),
                                         ],
                                       )),
+                                  // Container(
+                                  //     margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                  //     width: 241,
+                                  //     height: 57,
+                                  //     decoration: BoxDecoration(
+                                  //       borderRadius: BorderRadius.circular(25),
+                                  //     ),
+                                  //     child: Container(
+                                  //       width: double.infinity,
+                                  //       height: double.infinity,
+                                  //       decoration: BoxDecoration(
+                                  //         borderRadius:
+                                  //             BorderRadius.circular(25),
+                                  //         border: Border(),
+                                  //         gradient: LinearGradient(
+                                  //           begin: Alignment(0, -1),
+                                  //           end: Alignment(1.386, 1.316),
+                                  //           colors: <Color>[
+                                  //             Color(0xff034c81),
+                                  //             Color(0xff618fb0)
+                                  //           ],
+                                  //           stops: <double>[0, 1],
+                                  //         ),
+                                  //       ),
+                                  //       child: Center(
+                                  //         child: Text(
+                                  //           'submit',
+                                  //           style: TextStyle(
+                                  //             fontSize: 30,
+                                  //             fontWeight: FontWeight.w500,
+                                  //             height: 1.15,
+                                  //             color: Color(0xff000000),
+                                  //           ),
+                                  //         ),
+                                  //       ),
+                                  //     ))
                                   Container(
-                                      margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
-                                      width: 241,
-                                      height: 57,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(25),
+                                    width: double.infinity,
+                                    margin: EdgeInsets.all(10),
+                                    // color: Colors.blue,
+                                    child: ElevatedButton(
+                                      child: Text('Submit'),
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    Scanscreen()));
+                                      },
+                                      style: ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Color.fromARGB(
+                                                    255, 3, 76, 129)),
                                       ),
-                                      child: Container(
-                                        width: double.infinity,
-                                        height: double.infinity,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(25),
-                                          border: Border(),
-                                          gradient: LinearGradient(
-                                            begin: Alignment(0, -1),
-                                            end: Alignment(1.386, 1.316),
-                                            colors: <Color>[
-                                              Color(0xff034c81),
-                                              Color(0xff618fb0)
-                                            ],
-                                            stops: <double>[0, 1],
-                                          ),
-                                        ),
-                                        child: Center(
-                                          child: Text(
-                                            'submit',
-                                            style: TextStyle(
-                                              fontSize: 30,
-                                              fontWeight: FontWeight.w500,
-                                              height: 1.15,
-                                              color: Color(0xff000000),
-                                            ),
-                                          ),
-                                        ),
-                                      ))
+                                    ),
+                                  )
                                 ],
                               )),
                         ),

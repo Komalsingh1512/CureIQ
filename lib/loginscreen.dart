@@ -164,7 +164,7 @@ class loginscreen extends StatelessWidget {
                   'Login with google',
                   style: TextStyle(
                       fontSize: 20,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w500,
                       color: Colors.grey[500]),
                 ),
               ),

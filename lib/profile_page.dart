@@ -25,7 +25,7 @@ class _profile_PageState extends State<profile_Page> {
               Container(
                 padding: EdgeInsets.fromLTRB(25, 30, 25, 40),
                 width: double.infinity,
-                height: 350,
+                height: 240,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
                   gradient: LinearGradient(
@@ -35,40 +35,52 @@ class _profile_PageState extends State<profile_Page> {
                     stops: <double>[0, 1],
                   ),
                 ),
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Icon(
-                        Icons.arrow_back_sharp,
-                        size: 40,
-                      ),
-                      Container(
-                        margin: EdgeInsets.fromLTRB(75, 0, 77.5, 0),
-                        width: double.infinity,
-                        height: 100,
-                        child: Image(
-                            image: AssetImage("assets/images/Nature.png")),
-                      ),
-                      Container(
-                          child: Center(
-                        child: Column(
-                          children: [
-                            Text(
-                              'Riya bhagat',
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
+                child: Container(
+                  margin: EdgeInsets.fromLTRB(0, 12, 0, 0),
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.arrow_back_sharp,
+                              size: 40,
                             ),
-                            Text(
-                              'riyabhagat1@gmail.com',
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
-                            )
-                          ],
+                            onPressed: () {
+                              // do something
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => mixturepage()));
+                            },
+                          ),
                         ),
-                      )
-                          //
-                          )
-                    ]),
+                        Container(
+                          margin: EdgeInsets.fromLTRB(75, 0, 77.5, 0),
+                          width: double.infinity,
+                          height: 75,
+                          child: Image(
+                              image: AssetImage("assets/images/Nature.png")),
+                        ),
+                        Container(
+                            child: Center(
+                          child: Column(
+                            children: [
+                              Text(
+                                'Riya bhagat',
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                'riyabhagat1@gmail.com',
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ))
+                      ]),
+                ),
               ),
             ]),
           ),
@@ -82,21 +94,21 @@ class _profile_PageState extends State<profile_Page> {
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     prefixIcon: Icon(Icons.phone, size: 20)),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 3),
               TextFormField(
                 decoration: const InputDecoration(
                     label: Text('D.O.B',
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     prefixIcon: Icon(Icons.calendar_month)),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 3),
               TextFormField(
                 decoration: const InputDecoration(
                     label: Text('Blood Group',
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     prefixIcon: Icon(Icons.bloodtype_rounded)),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 3),
               TextFormField(
                 decoration: const InputDecoration(
                     label: Text('Address',
@@ -115,7 +127,10 @@ class _profile_PageState extends State<profile_Page> {
             // color: Colors.blue,
             child: ElevatedButton(
               child: Text('LogOut'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => loginscreen()));
+              },
               style: ButtonStyle(
                 backgroundColor:
                     MaterialStateProperty.all(Color.fromARGB(255, 3, 76, 129)),

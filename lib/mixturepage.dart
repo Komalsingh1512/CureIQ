@@ -19,12 +19,14 @@ class mixturepage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 10),
               child: new Icon(
                 Icons.arrow_back_ios,
-                color: Colors.black,
+                color: Color.fromARGB(255, 10, 10, 10),
                 size: 25,
               ),
             ),
-            onPressed: () => Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => doctortalk()))),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => doctortalk()));
+            }),
         backgroundColor: Colors.white,
         title: Text("Requirements", style: TextStyle(color: Colors.black)),
         centerTitle: true,
@@ -44,7 +46,7 @@ class mixturepage extends StatelessWidget {
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          color: Color(0xffffffff),
+          // color: Color.fromARGB(255, 109, 80, 80),
           borderRadius: BorderRadius.circular(25),
         ),
         child: Column(
@@ -57,21 +59,25 @@ class mixturepage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 32, 19),
+                        margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
                         width: double.infinity,
-                        height: 162,
+                        // color: Colors.amber,
+                        height: 180,
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                                padding: EdgeInsets.fromLTRB(0, 2, 20, 0),
+                                padding: EdgeInsets.fromLTRB(10, 2, 20, 0),
+                                width: 423,
                                 height: double.infinity,
+                                // color: Colors.black,
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
                                         width: 192,
                                         height: double.infinity,
+                                        // color: Colors.amber,
                                         child: Stack(
                                           children: [
                                             Positioned(
@@ -86,7 +92,8 @@ class mixturepage extends StatelessWidget {
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               15),
-                                                      color: Color(0xfff0efef),
+                                                      color: Color.fromARGB(
+                                                          255, 237, 221, 221),
                                                       border: Border(),
                                                     ),
                                                   ),
@@ -127,8 +134,9 @@ class mixturepage extends StatelessWidget {
                                           ],
                                         )),
                                     Container(
-                                        width: 179,
+                                        width: 200,
                                         height: double.infinity,
+                                        // color: Color.fromARGB(255, 126, 44, 14),
                                         child: Stack(
                                           children: [
                                             Positioned(
@@ -143,7 +151,8 @@ class mixturepage extends StatelessWidget {
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               15),
-                                                      color: Color(0xfff0efef),
+                                                      color: Color.fromARGB(
+                                                          255, 237, 221, 221),
                                                       border: Border(),
                                                     ),
                                                   ),
@@ -183,155 +192,155 @@ class mixturepage extends StatelessWidget {
                                             ),
                                           ],
                                         )),
-                                    // Container(
-                                    //     margin:
-                                    //         EdgeInsets.fromLTRB(30, 0, 31, 81),
-                                    //     width: double.infinity,
-                                    //     height: 160,
-                                    //     child: Row(
-                                    //       crossAxisAlignment:
-                                    //           CrossAxisAlignment.center,
-                                    //       children: [
-                                    //         Container(
-                                    //             margin: EdgeInsets.fromLTRB(
-                                    //                 0, 0, 25, 0),
-                                    //             width: 152,
-                                    //             height: double.infinity,
-                                    //             child: Stack(
-                                    //               children: [
-                                    //                 Positioned(
-                                    //                   // rectangle12A8o (17:175)
-                                    //                   left: 0,
-                                    //                   top: 12,
-                                    //                   child: Align(
-                                    //                     child: SizedBox(
-                                    //                       width: 152,
-                                    //                       height: 148,
-                                    //                       child: Container(
-                                    //                         decoration:
-                                    //                             BoxDecoration(
-                                    //                           borderRadius:
-                                    //                               BorderRadius
-                                    //                                   .circular(
-                                    //                                       15),
-                                    //                           color: Color(
-                                    //                               0xfff0efef),
-                                    //                           border: Border(),
-                                    //                         ),
-                                    //                       ),
-                                    //                     ),
-                                    //                   ),
-                                    //                 ),
-                                    //                 Positioned(
-                                    //                   // doctorappointmentGhd (17:176)
-                                    //                   left: 8,
-                                    //                   top: 73,
-                                    //                   child: Align(
-                                    //                     child: SizedBox(
-                                    //                       width: 124,
-                                    //                       height: 46,
-                                    //                       child: Text(
-                                    //                         'Doctor Appointment',
-                                    //                         style: TextStyle(
-                                    //                           fontSize: 20,
-                                    //                           fontWeight:
-                                    //                               FontWeight
-                                    //                                   .w500,
-                                    //                           height: 1.15,
-                                    //                           color: Color(
-                                    //                               0xff0b27f1),
-                                    //                         ),
-                                    //                       ),
-                                    //                     ),
-                                    //                   ),
-                                    //                 ),
-                                    //                 Positioned(
-                                    //                   // placeholder1ksh (17:177)
-                                    //                   left: 39,
-                                    //                   top: 0,
-                                    //                   child: Align(
-                                    //                     child: SizedBox(
-                                    //                         width: 60,
-                                    //                         height: 60,
-                                    //                         child: Image.asset(
-                                    //                           "assets/images/placeholder 1 (3).png",
-                                    //                           fit: BoxFit.cover,
-                                    //                         )),
-                                    //                   ),
-                                    //                 ),
-                                    //               ],
-                                    //             )),
-                                    //         Container(
-                                    //           width: 152,
-                                    //           height: double.infinity,
-                                    //           child: Stack(
-                                    //             children: [
-                                    //               Positioned(
-                                    //                 // rectangle12A8o (17:175)
-                                    //                 left: 0,
-                                    //                 top: 12,
-                                    //                 child: Align(
-                                    //                   child: SizedBox(
-                                    //                     width: 152,
-                                    //                     height: 148,
-                                    //                     child: Container(
-                                    //                       decoration:
-                                    //                           BoxDecoration(
-                                    //                         borderRadius:
-                                    //                             BorderRadius
-                                    //                                 .circular(
-                                    //                                     15),
-                                    //                         color: Color(
-                                    //                             0xfff0efef),
-                                    //                         border: Border(),
-                                    //                       ),
-                                    //                     ),
-                                    //                   ),
-                                    //                 ),
-                                    //               ),
-                                    //               Positioned(
-                                    //                 // doctorappointmentGhd (17:176)
-                                    //                 left: 8,
-                                    //                 top: 73,
-                                    //                 child: Align(
-                                    //                   child: SizedBox(
-                                    //                     width: 137,
-                                    //                     height: 46,
-                                    //                     child: Text(
-                                    //                       'Your Medicine report',
-                                    //                       style: TextStyle(
-                                    //                         fontSize: 20,
-                                    //                         fontWeight:
-                                    //                             FontWeight.w500,
-                                    //                         height: 1.15,
-                                    //                         color: Color(
-                                    //                             0xff0b27f1),
-                                    //                       ),
-                                    //                     ),
-                                    //                   ),
-                                    //                 ),
-                                    //               ),
-                                    //               Positioned(
-                                    //                 // placeholder1ksh (17:177)
-                                    //                 left: 39,
-                                    //                 top: 0,
-                                    //                 child: Align(
-                                    //                   child: SizedBox(
-                                    //                       width: 60,
-                                    //                       height: 60,
-                                    //                       child: Image.asset(
-                                    //                         "assets/images/placeholder 1 (3).png",
-                                    //                         fit: BoxFit.cover,
-                                    //                       )),
-                                    //                 ),
-                                    //               ),
-                                    //             ],
-                                    //           ),
-                                    //         )
-                                    //       ],
-                                    //     ))
                                   ],
                                 )),
+                          ],
+                        )),
+                    Container(
+                        // margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                        width: double.infinity,
+                        height: 180,
+                        // color: Colors.amber,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                                padding: EdgeInsets.fromLTRB(5, 2, 20, 0),
+                                width: 220,
+                                height: double.infinity,
+                                // color: Colors.black,
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      width: 192,
+                                      height: double.infinity,
+                                      // color: Colors.amber,
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            // rectangle12A8o (17:175)
+                                            left: 30,
+                                            top: 12,
+                                            child: Align(
+                                              child: SizedBox(
+                                                width: 152,
+                                                height: 148,
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            15),
+                                                    color: Color.fromARGB(
+                                                        255, 237, 221, 221),
+                                                    border: Border(),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            // doctorappointmentGhd (17:176)
+                                            left: 38,
+                                            top: 73,
+                                            child: Align(
+                                              child: SizedBox(
+                                                width: 138,
+                                                height: 46,
+                                                child: Text(
+                                                  'Doctor Appointment',
+                                                  style: TextStyle(
+                                                    fontSize: 20,
+                                                    fontWeight: FontWeight.w500,
+                                                    height: 1.15,
+                                                    color: Color(0xff0b27f1),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            // placeholder1ksh (17:177)
+                                            left: 70,
+                                            top: 0,
+                                            child: Align(
+                                              child: SizedBox(
+                                                  width: 60,
+                                                  height: 60,
+                                                  child: Image.asset(
+                                                    "assets/images/placeholder 1 (2).png",
+                                                    fit: BoxFit.cover,
+                                                  )),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                            Container(
+                              width: 200,
+                              height: double.infinity,
+                              // color: Colors.brown,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    // rectangle12A8o (17:175)
+                                    left: 15,
+                                    top: 14,
+                                    child: Align(
+                                      child: SizedBox(
+                                        width: 152,
+                                        height: 148,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(15),
+                                            color: Color.fromARGB(
+                                                255, 237, 221, 221),
+                                            border: Border(),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    // doctorappointmentGhd (17:176)
+                                    left: 28,
+                                    top: 75,
+                                    child: Align(
+                                      child: SizedBox(
+                                        width: 124,
+                                        height: 46,
+                                        child: Text(
+                                          'Your Medicine report',
+                                          style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w500,
+                                            height: 1.15,
+                                            color: Color(0xff0b27f1),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    // placeholder1ksh (17:177)
+                                    left: 69,
+                                    top: 0,
+                                    child: Align(
+                                      child: SizedBox(
+                                          width: 60,
+                                          height: 60,
+                                          child: Image.asset(
+                                            "assets/images/placeholder 1 (3).png",
+                                            fit: BoxFit.cover,
+                                          )),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
                           ],
                         ))
                   ],

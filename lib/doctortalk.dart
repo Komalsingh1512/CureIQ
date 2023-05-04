@@ -46,7 +46,7 @@ class doctortalk extends StatelessWidget {
         children: [
           SizedBox(
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.10,
+              height: MediaQuery.of(context).size.height * 0.1,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                   image: DecorationImage(
@@ -57,7 +57,7 @@ class doctortalk extends StatelessWidget {
             "Dr. Sam Smit",
             style: TextStyle(
               color: Color.fromARGB(255, 101, 149, 174),
-              fontSize: 25,
+              fontSize: 20,
             ),
             textAlign: TextAlign.center,
           ),
@@ -73,14 +73,14 @@ class doctortalk extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 10, top: 15, bottom: 10, right: 10),
+                    left: 10, top: 10, bottom: 5, right: 10),
                 child: CircleAvatar(
                   radius: 25,
                   backgroundImage: AssetImage("assets/images/drimage.png"),
                 ),
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.05,
+                height: MediaQuery.of(context).size.height * 0.04,
                 width: MediaQuery.of(context).size.width * 0.50,
                 decoration: BoxDecoration(
                   color: Color(0xff78a1a3),
@@ -106,8 +106,8 @@ class doctortalk extends StatelessWidget {
           Row(
             children: [
               Container(
-                margin: EdgeInsets.fromLTRB(130, 20, 10, 5),
-                height: MediaQuery.of(context).size.height * 0.05,
+                margin: EdgeInsets.fromLTRB(130, 5, 10, 5),
+                height: MediaQuery.of(context).size.height * 0.04,
                 width: MediaQuery.of(context).size.width * 0.50,
                 decoration: BoxDecoration(
                   color: Color(0xff78a1a3),
@@ -130,7 +130,7 @@ class doctortalk extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 0, top: 10, bottom: 10, right: 0),
+                    left: 0, top: 5, bottom: 10, right: 0),
                 child: CircleAvatar(
                   radius: 25,
                   backgroundImage: AssetImage("assets/images/Nature.png"),
@@ -142,14 +142,14 @@ class doctortalk extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 10, top: 40, bottom: 30, right: 10),
+                    left: 10, top: 0, bottom: 10, right: 10),
                 child: CircleAvatar(
                   radius: 25,
                   backgroundImage: AssetImage("assets/images/drimage.png"),
                 ),
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.05,
+                height: MediaQuery.of(context).size.height * 0.04,
                 width: MediaQuery.of(context).size.width * 0.50,
                 decoration: BoxDecoration(
                   color: Color(0xff78a1a3),
@@ -175,8 +175,8 @@ class doctortalk extends StatelessWidget {
           Row(
             children: [
               Container(
-                margin: EdgeInsets.fromLTRB(130, 10, 10, 5),
-                height: MediaQuery.of(context).size.height * 0.05,
+                margin: EdgeInsets.fromLTRB(130, 0, 10, 80),
+                height: MediaQuery.of(context).size.height * 0.04,
                 width: MediaQuery.of(context).size.width * 0.50,
                 decoration: BoxDecoration(
                   color: Color(0xff78a1a3),
@@ -199,7 +199,7 @@ class doctortalk extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 0, top: 5, bottom: 10, right: 0),
+                    left: 0, top: 10, bottom: 87, right: 0),
                 child: CircleAvatar(
                   radius: 25,
                   backgroundImage: AssetImage("assets/images/Nature.png"),
